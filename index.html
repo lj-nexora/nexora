@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nexora</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #0b1020;
+      color: white;
+      min-height: 100vh;
+    }
+
+    header {
+      padding: 20px 8%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid #202942;
+    }
+
+    .logo {
+      font-size: 28px;
+      font-weight: bold;
+      color: #4da3ff;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 25px;
+    }
+
+    .hero {
+      min-height: 80vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 40px 20px;
+    }
+
+    .hero-content {
+      max-width: 750px;
+    }
+
+    .hero h1 {
+      font-size: 64px;
+      margin-bottom: 20px;
+    }
+
+    .hero h1 span {
+      color: #4da3ff;
+    }
+
+    .hero p {
+      font-size: 20px;
+      line-height: 1.6;
+      color: #b8c1d9;
+      margin-bottom: 35px;
+    }
+
+    .buttons {
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      flex-wrap: wrap;
+    }
+
+    button {
+      border: none;
+      padding: 14px 25px;
+      border-radius: 10px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    .primary {
+      background: #4da3ff;
+      color: white;
+    }
+
+    .secondary {
+      background: #1a2238;
+      color: white;
+      border: 1px solid #303b59;
+    }
+
+    .features {
+      padding: 60px 8%;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+    }
+
+    .card {
+      background: #121a2e;
+      border: 1px solid #26314d;
+      border-radius: 15px;
+      padding: 30px;
+    }
+
+    .card h2 {
+      margin-bottom: 12px;
+      color: #4da3ff;
+    }
+
+    .card p {
+      color: #b8c1d9;
+      line-height: 1.6;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px;
+      border-top: 1px solid #202942;
+      color: #8994ad;
+    }
+
+    @media (max-width: 700px) {
+      .hero h1 {
+        font-size: 42px;
+      }
+
+      .features {
+        grid-template-columns: 1fr;
+      }
+
+      nav {
+        display: none;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <div class="logo">Nexora</div>
+
+    <nav>
+      <a href="#">Home</a>
+      <a href="#features">Features</a>
+      <a href="#about">About</a>
+    </nav>
+  </header>
+
+  <main>
+
+    <section class="hero">
+      <div class="hero-content">
+        <h1>Welcome to <span>Nexora</span></h1>
+
+        <p>
+          A modern digital platform built for the next generation.
+          Explore, create, connect, and build your future with Nexora.
+        </p>
+
+        <div class="buttons">
+          <button class="primary" onclick="startNexora()">
+            Get Started
+          </button>
+
+          <button class="secondary" onclick="learnMore()">
+            Learn More
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section class="features" id="features">
+
+      <div class="card">
+        <h2>Connect</h2>
+        <p>
+          Connect with people and ideas through a simple modern experience.
+        </p>
+      </div>
+
+      <div class="card">
+        <h2>Create</h2>
+        <p>
+          Build and manage your projects from one powerful platform.
+        </p>
+      </div>
+
+      <div class="card">
+        <h2>Explore</h2>
+        <p>
+          Discover new possibilities and grow with Nexora.
+        </p>
+      </div>
+
+    </section>
+
+  </main>
+
+  <footer id="about">
+    © 2026 Nexora. All rights reserved.
+  </footer>
+
+  <script>
+    function startNexora() {
+      alert("Welcome to Nexora!");
+    }
+
+    function learnMore() {
+      document.getElementById("features").scrollIntoView({
+        behavior: "smooth"
+      });
+    }
+  </script>
+
+</body>
+</html>
