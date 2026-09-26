@@ -3,24 +3,19 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
   <title>Nexora</title>
-
   <link rel="stylesheet" href="style.css">
-
-  <meta name="description" content="Nexora - Your modern digital experience.">
 </head>
 
 <body>
 
-  <!-- HEADER -->
   <header class="navbar">
     <div class="logo">
       <span class="logo-mark">N</span>
       <span>Nexora</span>
     </div>
 
-    <nav class="nav-links">
+    <nav>
       <a href="#home">Home</a>
       <a href="#features">Features</a>
       <a href="#about">About</a>
@@ -29,16 +24,12 @@
     <button class="menu-btn" onclick="toggleMenu()">☰</button>
   </header>
 
-
-  <!-- MOBILE MENU -->
   <div id="mobileMenu" class="mobile-menu">
-    <a href="#home" onclick="closeMenu()">Home</a>
-    <a href="#features" onclick="closeMenu()">Features</a>
-    <a href="#about" onclick="closeMenu()">About</a>
+    <a href="#home">Home</a>
+    <a href="#features">Features</a>
+    <a href="#about">About</a>
   </div>
 
-
-  <!-- HERO -->
   <main>
 
     <section id="home" class="hero">
@@ -56,8 +47,8 @@
         </h1>
 
         <p>
-          A modern digital platform designed to bring your ideas,
-          projects and experiences together in one powerful place.
+          A modern digital platform designed to bring your
+          ideas, projects and experiences together in one place.
         </p>
 
         <div class="hero-buttons">
@@ -76,14 +67,11 @@
 
         <div class="card-top">
           <span class="status-dot"></span>
-          <span>Nexora Dashboard</span>
+          Nexora Dashboard
         </div>
 
         <div class="dashboard-preview">
-
-          <div class="preview-number">
-            01
-          </div>
+          <div class="preview-number">01</div>
 
           <h3>
             Your digital journey starts here.
@@ -96,7 +84,6 @@
           <div class="progress">
             <div class="progress-bar"></div>
           </div>
-
         </div>
 
       </div>
@@ -104,12 +91,15 @@
     </section>
 
 
-    <!-- FEATURES -->
     <section id="features" class="features-section">
 
       <div class="section-heading">
         <span>FEATURES</span>
-        <h2>Everything you need.</h2>
+
+        <h2>
+          Everything you need.
+        </h2>
+
         <p>
           Nexora brings useful tools and a clean experience together.
         </p>
@@ -129,7 +119,7 @@
           <div class="feature-icon">🔒</div>
           <h3>Secure</h3>
           <p>
-            Designed with privacy and security in mind from the beginning.
+            Designed with privacy and security in mind.
           </p>
         </article>
 
@@ -145,7 +135,7 @@
           <div class="feature-icon">🚀</div>
           <h3>Powerful</h3>
           <p>
-            Tools built to help you turn ideas into real projects.
+            Tools built to help turn ideas into real projects.
           </p>
         </article>
 
@@ -154,21 +144,23 @@
     </section>
 
 
-    <!-- ABOUT -->
     <section id="about" class="about-section">
 
       <div class="about-box">
 
         <div>
-          <span class="section-label">ABOUT NEXORA</span>
+          <span class="section-label">
+            ABOUT NEXORA
+          </span>
 
           <h2>
             A new way to experience digital products.
           </h2>
 
           <p>
-            Nexora is being built as a modern platform where technology,
-            creativity and useful digital experiences come together.
+            Nexora is being built as a modern platform where
+            technology, creativity and useful digital experiences
+            come together.
           </p>
         </div>
 
@@ -181,10 +173,11 @@
     </section>
 
 
-    <!-- CTA -->
     <section class="cta-section">
 
-      <h2>Ready to explore Nexora?</h2>
+      <h2>
+        Ready to explore Nexora?
+      </h2>
 
       <p>
         Start building your next digital experience today.
@@ -199,7 +192,6 @@
   </main>
 
 
-  <!-- FOOTER -->
   <footer>
 
     <div class="footer-logo">
@@ -214,7 +206,6 @@
   </footer>
 
 
-  <!-- JAVASCRIPT -->
   <script>
 
     function getStarted() {
@@ -228,11 +219,6 @@
     function toggleMenu() {
       const menu = document.getElementById("mobileMenu");
       menu.classList.toggle("show");
-    }
-
-    function closeMenu() {
-      const menu = document.getElementById("mobileMenu");
-      menu.classList.remove("show");
     }
 
   </script>
